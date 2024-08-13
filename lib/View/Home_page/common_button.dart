@@ -3,9 +3,9 @@ import 'package:appointment_booking_app/Utils/custom_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget commonButton() {
+Widget commonButton(double height) {
   return Container(
-    height: 24.h,
+    height: height.h,
     width: 73.w,
     decoration: BoxDecoration(
         color: AppColors.white, borderRadius: BorderRadius.circular(4)),

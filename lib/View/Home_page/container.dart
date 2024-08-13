@@ -5,14 +5,18 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 Widget customContainer() {
   return Container(
     width: 84.w,
-    height: 84.w,
+    height: 84.h,
     decoration: const BoxDecoration(
       color: AppColors.primary,
     ),
-    child: const Icon(
-      Icons.image,
-      color: AppColors.dgrey,
-      size: 17.79,
+    child: SizedBox(
+      height: 23.72.h,
+      width: 23.72.w,
+      child: Image.asset(
+        "lib/assets/images/image.png",
+        height: 17.79.h,
+        width: 17.79.w,
+      ),
     ),
   );
 }

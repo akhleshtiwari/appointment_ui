@@ -1,5 +1,3 @@
-
-
 import 'package:appointment_booking_app/View/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,19 +13,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(430, 932),
       splitScreenMode: true,
       minTextAdapt: true,
+      designSize: const Size(430, 932),
       builder: (context, child) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           fontFamily: 'Inter',
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
         home: child,
       ),
-      child:  const HomePage(),
+      child: const HomePage(),
     );
   }
 }
